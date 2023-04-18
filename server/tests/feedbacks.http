@@ -1,0 +1,12 @@
+#  Hello World!
+GET http://localhost:3333/ HTTP/1.1
+###
+
+# Create feedback
+POST http://localhost:3333/feedbacks HTTP/1.1
+content-type: application/json
+
+{
+  "type": "BUG",
+  "comment": "Está tudo bugado!"
+}
